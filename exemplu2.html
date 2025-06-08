@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Package Demo - NexaByte</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #fff;
+      text-shadow:
+        0 0 5px #00cfff,
+        0 0 10px #00aaff,
+        0 0 20px #005f99,
+        0 0 30px #00e1ff;
+      animation: pulse 2.5s ease-in-out infinite;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 10px #00cfff, 0 0 20px #00aaff; }
+      50% { text-shadow: 0 0 25px #00e1ff, 0 0 40px #0088cc; }
+    }
+
+    p.description {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 3rem;
+      text-align: center;
+      color: #ccefff;
+      text-shadow: 0 0 5px rgba(0, 207, 255, 0.7);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 960px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 1.8rem 1.5rem;
+      box-shadow:
+        0 4px 15px rgba(0, 207, 255, 0.3),
+        inset 0 0 8px rgba(0, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      cursor: default;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      user-select: none;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow:
+        0 8px 30px rgba(0, 255, 255, 0.6),
+        inset 0 0 15px rgba(0, 255, 255, 0.5);
+    }
+
+    .card-icon {
+      font-size: 2.8rem;
+      margin-bottom: 0.8rem;
+      color: #00e1ff;
+      text-shadow: 0 0 6px #00e1ff;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 6px #00e1ff;
+      }
+      to {
+        text-shadow: 0 0 15px #00ffff, 0 0 25px #00bfff;
+      }
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .placeholder-message {
+      font-style: italic;
+      color: #99eaffcc;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #a0eaffaa;
+      font-size: 0.9rem;
+      text-align: center;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>GOLDEN PACKAGE </h1>
+  <p class="description">
+    Website with CSS animations, clean layout, easy to customize.<br />
+    Perfect for a modern and functional site.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon">🏠</div>
+      <div class="card-title">Home</div>
+      <div class="placeholder-message">Section temporarily unavailable.<br />Customizable after purchase.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">✨</div>
+      <div class="card-title">CSS Animations</div>
+      <div class="placeholder-message">Section temporarily unavailable.<br />Customizable after purchase.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛠️</div>
+      <div class="card-title">Customization</div>
+      <div class="placeholder-message">Section temporarily unavailable.<br />Customizable after purchase.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📄</div>
+      <div class="card-title">Documentation</div>
+      <div class="placeholder-message">Section temporarily unavailable.<br />Customizable after purchase.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚙️</div>
+      <div class="card-title">Settings</div>
+      <div class="placeholder-message">Section temporarily unavailable.<br />Customizable after purchase.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📞</div>
+      <div class="card-title">Contact</div>
+      <div class="placeholder-message">Section temporarily unavailable.<br />Customizable after purchase.</div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 NexaByte</footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexaByte – Website-uri de vânzare</title>
+
+  <!-- Favicon preluat din logo.png -->
+  <link rel="icon" href="logo.png" type="image/png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Stiluri pentru header */
+    header .container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 0;
+    }
+
+    header .branding {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .branding img.logo {
+      height: 60px;
+      width: auto;
+    }
+
+    header .branding h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #000;
+    }
+
+    header nav {
+      margin-left: auto;
+    }
+
+    header nav a {
+      color: #007BFF;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Descrieri bilingve */
+    .desc-ro {
+      font-weight: 600;
+      color: #f5f5f5;
+    }
+
+    .desc-en {
+      font-style: italic;
+      color: #ccc;
+      margin-top: 5px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="logo.png" alt="Logo NexaByte" class="logo" />
+        <h1>NexaByte</h1>
+      </div>
+
+      <nav>
+        <a href="index.html">Acasă</a>
+        <a href="contact.html">Contact</a>
+        <a href="politica.html">Termeni & GDPR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Website-uri disponibile / Available Websites</h2>
+    <div class="grid">
+      <div class="product-card">
+        <h3>Starter</h3>
+        <p>
+          <span class="desc-ro">Design modern, HTML5, responsive. Ideal pentru firme mici sau freelanceri.</span><br />
+          <span class="desc-en">Modern design, HTML5, responsive. Ideal for small businesses or freelancers.</span>
+        </p>
+        <span>10€</span>
+        <div class="btn-row">
+          <a class="btn" href="https://paypal.me/RB40887?country.x=RO&locale.x=ro_RO" target="_blank">Cumpără cu PayPal</a>
+          <a class="btn-outline" href="exemplu1.html" target="_blank">Vezi Exemplu</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <h3>Golden</h3>
+        <p>
+          <span class="desc-ro">Website cu animații CSS, layout curat, ușor de modificat. Perfect pentru un site modern și funcțional.</span><br />
+          <span class="desc-en">Website with CSS animations, clean layout, easy to customize. Perfect for a modern and functional site.</span>
+        </p>
+        <span>25€</span>
+        <div class="btn-row">
+          <a class="btn" href="https://paypal.me/RB40887?country.x=RO&locale.x=ro_RO" target="_blank">Cumpără cu PayPal</a>
+          <a class="btn-outline" href="exemplu2.html" target="_blank">Vezi Exemplu</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <h3>Pro</h3>
+        <p>
+          <span class="desc-ro">Design personalizat, animații complexe, optimizare SEO de bază, integrare social media și Google Maps. Până la 10 pagini.</span><br />
+          <span class="desc-en">Custom design, complex animations, basic SEO optimization, social media and Google Maps integration. Up to 10 pages.</span>
+        </p>
+        <span>50€</span>
+        <div class="btn-row">
+          <a class="btn" href="https://paypal.me/RB40887?country.x=RO&locale.x=ro_RO" target="_blank">Cumpără cu PayPal</a>
+          <a class="btn-outline" href="exemplu3.html" target="_blank">Vezi Exemplu</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NexaByte.   Toate drepturile rezervate.  /
+  All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

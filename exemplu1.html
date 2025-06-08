@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexaByte Replica - Starter Package Demo</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0a0a0a;
+      background-image: url('background.png'), radial-gradient(circle at 70% 20%, rgba(255,255,255,0.04) 0%, transparent 80%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .neon-title {
+      font-weight: 800;
+      color: #d48fff;
+      text-shadow: 0 0 6px #d48fff, 0 0 14px #b76efc;
+      letter-spacing: 1px;
+    }
+
+    .server-ip {
+      background: rgba(164, 85, 247, 0.15);
+      border: 2px solid #a855f7;
+      color: #d48fff;
+      font-weight: 600;
+      padding: 14px 20px;
+      border-radius: 14px;
+      box-shadow: 0 0 8px #a855f7, 0 0 15px #d48fff;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.3s;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .server-ip:hover {
+      background: rgba(212, 143, 255, 0.25);
+      box-shadow: 0 0 12px #d48fff, 0 0 25px #a855f7;
+      transform: scale(1.03);
+    }
+
+    .moon-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 0.75rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.3s;
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+      color: white;
+    }
+
+    .moon-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .bg-blue { background: #1e3a8a; }
+    .bg-red { background: #7f1d1d; }
+    .bg-green { background: #064e3b; }
+    .bg-yellow { background: #78350f; }
+    .bg-purple { background: #4c1d95; }
+    .bg-indigo { background: #312e81; }
+
+    .moon-button span {
+      margin-left: 0.5rem;
+    }
+
+    .placeholder-message {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 8px;
+      font-style: italic;
+      margin-top: 10px;
+      user-select: none;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body class="text-white flex flex-col items-center justify-center min-h-screen text-center px-4">
+
+  <img src="logo.png" alt="NexaByte Logo" class="w-52 mb-6 drop-shadow-2xl" />
+
+  <h1 class="text-4xl neon-title mb-1">WELCOME TO NexaByte</h1>
+  <p class="text-gray-300 text-base mb-6">Premium Minecraft experience in the Minecraft world</p>
+
+  <div class="server-ip" onclick="navigator.clipboard.writeText('play.NexaByte.net')" title="Click to copy server IP">
+    play.NexaByte.net
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl mb-8">
+    <div class="moon-button bg-blue flex-col">
+      📘 <span>RULES</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-red flex-col">
+      ⚖️ <span>UNBAN REQUEST</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-green flex-col">
+      👥 <span>STAFF TEAM</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-yellow flex-col">
+      📤 <span>APPLICATIONS</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-purple flex-col">
+      📩 <span>REPORTS</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-indigo flex-col">
+      🛒 <span>SHOP</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-yellow flex-col">
+      🌕 <span>MOON OLX</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+    <div class="moon-button bg-green flex-col">
+      📝 <span>STAFF FEEDBACK</span>
+      <p class="placeholder-message">This section is temporarily unavailable. It will be customized after purchasing the Starter package.</p>
+    </div>
+  </div>
+
+  <footer class="text-sm text-gray-500 mt-4">&copy; 2025 NexaByte</footer>
+</body>
+</html>

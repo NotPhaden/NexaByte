@@ -1,0 +1,181 @@
+/* Stiluri de bază */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #121212, #181818);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Header și meniu */
+header {
+  background-color: #121212;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #222;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00cfff;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conținut principal */
+main h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+/* Grid de produse */
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Carduri produs */
+.product-card {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #333;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  border-color: #00cfff;
+  box-shadow: 0 4px 20px rgba(0, 207, 255, 0.1);
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+}
+
+.product-card span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #00e1ff;
+}
+
+/* Butoane */
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn,
+.btn-outline {
+  flex: none;
+  min-width: 140px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00cfff, #00e1ff);
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0, 207, 255, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00b2e0, #00cfff);
+}
+
+.btn-outline {
+  border: 2px solid #00cfff;
+  color: #00cfff;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #00cfff11;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #121212;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
+/* Contact specific */
+.product-card.contact {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    min-width: 100%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

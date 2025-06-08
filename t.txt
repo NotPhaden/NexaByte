@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Termeni & GDPR – NexaByte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>NexaByte</h1>
+      <nav>
+        <a href="index.html">Acasă</a>
+        <a href="contact.html">Contact</a>
+        <a href="politica.html">Termeni & GDPR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Termeni și condiții & GDPR</h2>
+    <section>
+      <h3>Termeni și condiții</h3>
+      <p>
+        Prin utilizarea acestui site, sunteți de acord cu termenii și condițiile noastre. 
+        Vă rugăm să citiți cu atenție pentru a înțelege drepturile și responsabilitățile dvs.
+      </p>
+      <ul>
+        <li>Toate produsele sunt livrate digital după confirmarea plății.</li>
+        <li>Nu oferim rambursări după livrarea fișierelor.</li>
+        <li>Utilizarea site-ului se face pe propriul risc.</li>
+        <li>Ne rezervăm dreptul de a modifica termenii fără notificare prealabilă.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Politica GDPR</h3>
+      <p>
+        Respectăm dreptul dvs. la confidențialitate. Datele personale sunt colectate doar pentru procesarea comenzilor și nu sunt partajate cu terți.
+      </p>
+      <p>
+        Aveți dreptul să solicitați accesul, modificarea sau ștergerea datelor dvs. contactându-ne prin pagina de contact.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2025 NexaByte.   Toate drepturile rezervate.  /
+  All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
