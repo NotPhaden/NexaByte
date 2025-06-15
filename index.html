@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NexaByte – Website-uri de vânzare</title>
+  <title>NexaByte – Website-uri & Discord Setup</title>
 
   <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-
   <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
     header .container {
       display: flex;
       align-items: center;
@@ -30,17 +42,19 @@
     header .branding h1 {
       margin: 0;
       font-size: 2rem;
-      color: #000;
+      color: #fff;
     }
 
     header nav {
       margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
     header nav a {
       color: #007BFF;
       text-decoration: none;
-      margin-left: 20px;
       font-weight: 500;
     }
 
@@ -62,23 +76,50 @@
       background-color: #4a54e1;
     }
 
-    .desc-ro {
-      font-weight: 600;
-      color: #f5f5f5;
+    .btn {
+      background-color: #00aaff;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 0 10px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
     }
 
-    .desc-en {
-      font-style: italic;
+    .btn:hover {
+      background-color: #008ecc;
+    }
+
+    main.container {
+      text-align: center;
+      padding: 50px 20px 40px;
+    }
+
+    main.container p {
+      max-width: 600px;
+      margin: 15px auto;
+      font-size: 1.1rem;
       color: #ccc;
-      margin-top: 5px;
-      font-size: 0.9rem;
     }
 
-    .payment-note {
-      font-size: 0.85rem;
-      margin-top: 8px;
-      color: #d9534f;
-      font-weight: 600;
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding: 20px 0;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -94,72 +135,24 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
-        <a href="politica.html">Termens & GDPR</a>
+        <a href="politica.html">Termeni & GDPR</a>
         <a class="discord-btn" href="https://discord.gg/pNWj3BJc46" target="_blank">🎮 NexaByte Discord</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h2>Website-uri disponibile / Available Websites</h2>
-    <div class="grid">
-
-      <div class="product-card">
-        <h3>Starter</h3>
-        <p>
-          <span class="desc-ro">Design modern, HTML5, responsive. Ideal pentru firme mici sau freelanceri.</span><br />
-          <span class="desc-en">Modern design, HTML5, responsive. Ideal for small businesses or freelancers.</span>
-        </p>
-        <span>10€</span>
-        <p class="payment-note">
-          După plată, deschide un ticket pe Discord și trimite dovada plății.<br />
-          After payment, open a ticket on Discord and send the payment proof.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="https://paypal.me/RB40887?country.x=RO&locale.x=ro_RO" target="_blank">Buy With PayPal</a>
-          <a class="btn-outline" href="exemplu1.html" target="_blank">See example</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <h3>Golden</h3>
-        <p>
-          <span class="desc-ro">Website cu animații CSS, layout curat, ușor de modificat. Perfect pentru un site modern și funcțional.</span><br />
-          <span class="desc-en">Website with CSS animations, clean layout, easy to customize. Perfect for a modern and functional site.</span>
-        </p>
-        <span>25€</span>
-        <p class="payment-note">
-          După plată, deschide un ticket pe Discord și trimite dovada plății.<br />
-          After payment, open a ticket on Discord and send the payment proof.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="https://paypal.me/RB40887?country.x=RO&locale.x=ro_RO" target="_blank">Buy With PayPal</a>
-          <a class="btn-outline" href="exemplu2.html" target="_blank">See example</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <h3>Pro</h3>
-        <p>
-          <span class="desc-ro">Design personalizat, animații complexe, optimizare SEO de bază, integrare social media și Google Maps. Până la 10 pagini.</span><br />
-          <span class="desc-en">Custom design, complex animations, basic SEO optimization, social media and Google Maps integration. Up to 10 pages.</span>
-        </p>
-        <span>50€</span>
-        <p class="payment-note">
-          După plată, deschide un ticket pe Discord și trimite dovada plății.<br />
-          After payment, open a ticket on Discord and send the payment proof.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="https://paypal.me/RB40887?country.x=RO&locale.x=ro_RO" target="_blank">Buy With PayPal</a>
-          <a class="btn-outline" href="exemplu3.html" target="_blank">See example</a>
-        </div>
-      </div>
-
-    </div>
+    <h2>Bine ai venit la NexaByte!</h2>
+    <p>Descoperă serviciile noastre rapide și profesionale pentru website-uri și Discord.</p>
+    <p>
+      <a href="websites.html" class="btn">🌐 Website-uri</a>
+      <a href="discord.html" class="btn">🎮 Discord Setup</a>
+    </p>
   </main>
 
   <footer>
     <div class="container">
+      <p>Ne găsești și pe Discord sau la <a href="contact.html">pagina de contact</a>.</p>
       <p>&copy; 2025 NexaByte. Toate drepturile rezervate. / All rights reserved.</p>
     </div>
   </footer>
