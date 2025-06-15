@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Echipa Staff</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #1e1e1e;
+      color: white;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 0;
+    }
+    header .branding {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    header .branding img.logo {
+      height: 60px;
+      width: auto;
+    }
+    header .branding h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #fff;
+    }
+    header nav {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    header nav a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    .discord-btn {
+      background-color: #5865F2;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .discord-btn:hover {
+      background-color: #4a54e1;
+    }
+    main {
+      text-align: center;
+      padding: 50px 20px 40px;
+    }
+    h1 {
+      color: #3399ff;
+      margin-bottom: 30px;
+    }
+    .staff-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: linear-gradient(to bottom, #003366, #005599);
+      border-radius: 20px;
+      overflow: hidden;
+      width: 280px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+    .avatar {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .role {
+      font-size: 14px;
+      opacity: 0.9;
+      text-transform: uppercase;
+    }
+    .card-body {
+      background: #111;
+      padding: 20px;
+      font-size: 14px;
+      min-height: 130px;
+      text-align: left;
+      line-height: 1.6;
+      color: #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-body p {
+      margin: 0 0 10px 0;
+    }
+    .joined {
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0.6;
+      text-align: right;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding: 20px 0;
+      border-top: 1px solid #333;
+    }
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img src="logo.png" alt="Logo NexaByte" class="logo" />
+        <h1>NexaByte</h1>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="politica.html">Termeni & GDPR</a>
+        <a class="discord-btn" href="https://discord.gg/pNWj3BJc46" target="_blank">🎮 NexaByte Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Echipa de Dezvoltatori</h1>
+
+    <div class="staff-container">
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://media.tenor.com/kN1g4lzWazgAAAAC/developer.gif" alt="Infinite" class="avatar" />
+          <div class="name">NotPhade</div>
+          <div class="role">Developer</div>
+        </div>
+        <div class="card-body">
+          <p>Se ocupă de toate aspectele tehnice ale proiectului: dezvoltarea website-urilor, configurarea serverelor și managementul general al infrastructurii.</p>
+          <p>Responsabil pentru întreaga arhitectură și funcționalitate a platformei NexaByte.</p>
+          <div class="joined">Joined: iunie 2024</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://media.tenor.com/kN1g4lzWazgAAAAC/developer.gif" alt="Supporter" class="avatar" />
+          <div class="name">SOON</div>
+          <div class="role">Supporter</div>
+        </div>
+        <div class="card-body">
+          <p>Răspunde rapid și eficient întrebărilor utilizatorilor, oferind suport tehnic și informații detaliate despre serviciile NexaByte.</p>
+          <p>Creează un mediu prietenos și organizat pentru comunitate, facilitând comunicarea clară și rezolvarea promptă a problemelor tehnice.</p>
+          <div class="joined">Joined: în curând</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Ne găsești și pe Discord sau la <a href="contact.html">pagina de contact</a>.</p>
+      <p>&copy; 2025 NexaByte. Toate drepturile rezervate. / All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
